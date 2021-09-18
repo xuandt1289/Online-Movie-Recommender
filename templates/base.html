@@ -1,0 +1,100 @@
+<!-- templates/base.html -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Movie Recommendation Website (^-^)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+    <style>
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 16px;
+            letter-spacing: 5px;
+            font-weight: bold;
+            color:  #000000;
+            background-color: #ffffcc;
+            font-family: "Times New Roman", Times, serif;
+            text-transform: uppercase;
+        }
+
+        .navbar-nav li a:hover {
+            color:  #cc0000 !important;
+        }
+
+        .hero-body {
+            color: #cc0000;
+            background-color: #ccffff;
+            font-family: "Georgia";
+        }
+
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="hero is-primary is-fullheight">
+
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+
+                    <div id="navbarMenuHeroA" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a href="{{ url_for('main.home') }}" class="navbar-item">
+                                Home
+                            </a>
+
+                            <a href="{{ url_for('main.recommend') }}" class="navbar-item">
+                                Recommendation
+                            </a>
+
+                            <a href="{{ url_for('main.history') }}" class="navbar-item">
+                                History
+                            </a>
+
+                            {% if not current_user.is_authenticated %}
+                            <a href="{{ url_for('auth.login') }}" class="navbar-item">
+                                Login
+                            </a>
+                            <a href="{{ url_for('auth.signup') }}" class="navbar-item">
+                                Signup
+                            </a>
+                            {% endif %}
+
+                            {% if current_user.is_authenticated %}
+                            <a href="{{ url_for('auth.logout') }}" class="navbar-item">
+                                Logout
+                            </a>
+                            {% endif %}
+
+                            <a href="{{ url_for('main.contact') }}" class="navbar-item">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="hero-body">
+            <div class="container has-text-centered">
+               {% block content %}
+               {% endblock %}
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
