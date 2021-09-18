@@ -10,30 +10,11 @@ Train and save models offline by running **BuildModel.ipynb**. Run **app.py** an
 ### Some snapshots
 
 ![center](/snapshots/start.png) 
-
-<img width="100%" height="100%" alt="portfolio_view" 
-src="https://github.com/xuandt1289/Online-Movie-Recommender/tree/main/snapshots/start.png">
-
-<img width="100%" height="100%" alt="portfolio_view" 
-src="https://github.com/xuandt1289/Online-Movie-Recommender/tree/main/snapshots/signup.png">
-
-<img width="100%" height="100%" alt="portfolio_view" 
-src="https://github.com/xuandt1289/Online-Movie-Recommender/tree/main/snapshots/login.png">
-
-<img width="100%" height="100%" alt="portfolio_view" 
-src="https://github.com/xuandt1289/Online-Movie-Recommender/tree/main/snapshots/welcome.png">
-
-<img width="100%" height="100%" alt="portfolio_view" 
-src="https://github.com/xuandt1289/Online-Movie-Recommender/tree/main/snapshots/top10new.png">
-
-<img width="100%" height="100%" alt="portfolio_view" 
-src="https://github.com/xuandt1289/Online-Movie-Recommender/tree/main/snapshots/top10high.png">
-
-<img width="100%" height="100%" alt="portfolio_view" 
-src="https://github.com/xuandt1289/Online-Movie-Recommender/tree/main/snapshots/top10low.png">
-
-<img width="100%" height="100%" alt="portfolio_view" 
-src="https://github.com/xuandt1289/Online-Movie-Recommender/tree/main/snapshots/top10recommend.png">
-
-<img width="100%" height="100%" alt="portfolio_view" 
-src="https://github.com/xuandt1289/Online-Movie-Recommender/tree/main/snapshots/contact.png">
+![center](/snapshots/signup.png) 
+![center](/snapshots/login.png) 
+![center](/snapshots/welcome.png) 
+![center](/snapshots/top10new.png) 
+![center](/snapshots/top10high.png) 
+![center](/snapshots/top10low.png) 
+![center](/snapshots/top10recommend.png) 
+![center](/snapshots/contact.png) 
