@@ -3,8 +3,17 @@
 {% extends "base.html" %}
 
 {% block content %}
+<style>
+    .bg-4 {
+        background-color: #ccffff;
+        color: #555555;
+        text-align: right;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+    }
+</style>
 <div class="column is-4 is-offset-4">
-    <h3 class="title">Sign Up</h3>
+    <h3 class="title" style="color:#6633ff">Sign Up</h3>
     <div class="box">
         {% with messages = get_flashed_messages() %}
         {% if messages %}
@@ -36,4 +45,8 @@
         </form>
     </div>
 </div>
+
+<footer class="container-fluid bg-4 text-center">
+    <p style="color: #777777; font-size: 17px; letter-spacing: 4px;">Made by <a style="color: #6666ff; font-size: 15px; letter-spacing: 4px;", href="https://github.com/xuandt1289">Xuan Dang</a></p>
+</footer>
 {% endblock %}
